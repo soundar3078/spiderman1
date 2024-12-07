@@ -1,3 +1,12 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
 /* Sticky Header */
 #sticky-header {
     position: fixed;
@@ -12,46 +21,67 @@
 #sticky-header nav ul {
     display: flex;
     justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
 #sticky-header nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 #sticky-header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
-}
-
-/* Dark Mode */
-body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.dark-mode-toggle button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    font-size: 18px;
 }
 
 /* About Section */
 .about {
-    padding: 50px 20px;
+    margin-top: 60px;
+    padding: 20px;
 }
 
-.about h2 {
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
     text-align: center;
     font-size: 36px;
     color: #333;
 }
 
+h3 {
+    color: #333;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
 /* Review Section */
 .review-section {
-    margin: 50px 0;
+    margin-top: 50px;
 }
 
 form {
@@ -61,11 +91,11 @@ form {
 }
 
 input, textarea {
-    width: 300px;
+    width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button.submit {
@@ -81,30 +111,11 @@ button.submit:hover {
     background-color: #45a049;
 }
 
-/* Social Icons */
-.socialicon {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    font-size: 24px;
-}
-
-.socialicon a {
-    color: #333;
-}
-
-.socialicon a:hover {
-    color: #4CAF50;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about {
-        padding: 20px 10px;
-    }
-
-    .socialicon {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
